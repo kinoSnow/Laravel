@@ -16,7 +16,7 @@ use App\Http\Controllers\portfolioController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('introduction');
 });
 
 Route::get('create', [HelloController::class, 'create']);
