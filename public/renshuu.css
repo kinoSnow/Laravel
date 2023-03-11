@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* pc、スマホ共通スタイル　*/
+body{
+  font-family:"Source Sans Pro","Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p{
+  font-size: 15px;
+}
+
+/*================
+PC用のスタイル 
+=================*/
+/* 横幅設定 */
+body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ /* ナビゲーションのレイアウト */
+ #nav-pc {
+  text-align: right;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc > a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+#nav-pc > a:link {
+  color: #a0753caa;
+}
+#nav-pc > a:visited {
+  color: #189d3b9e;
+}
+#nav-pc > a:hover {
+  color: #a0753caa;
+  text-decoration: underline;
+}
+#nav-pc > a:active {
+  color: #189d3b9e;
+}
+
+/* メインビジュアル*/
+body {
+  background-color: #c8d09d24; 
+}
+#main-visual {
+  position: relative;
+  height: 600px;
+}
+
+ /* 見出し */
+ h1 {
+  font-size:  40px;       /* 文字サイズ指定 */
+  font-family: 'M PLUS 1p', sans-serif;   /* フォントの種類指定 */
+}
+ h2 {
+  font-size:  30px;       /* 文字サイズ指定 */
+  font-family: 'Homemade Apple', cursive;   /* フォントの種類指定 */
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'M PLUS 1p', sans-serif;    /* フォントの種類指定 */
+}
+
+/* 自己紹介アイコン*/
+#mission-photo {
+  width: 20%;
+}
+
+/* フッター */
+footer {
+  background-color: #b5dbae;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+
+#footer-logo {
+  margin-bottom: 30px;
+}
+/*================
+PC用のスタイルcontact
+=================*/
+/* 横幅設定 */
+#contact>body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+#contact>header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ /* ナビゲーションのレイアウト */
+ #contact-nav-pc {
+  text-align: right;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#contact-nav-pc > a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+#contact-nav-pc > a:link {
+  color: #c05498;
+}
+#contact-nav-pc > a:visited {
+  color: #f38e13;
+}
+#contact-nav-pc > a:hover {
+  color: #c05498;
+  text-decoration: underline;
+}
+#contact-nav-pc > a:active {
+  color: #f38e13;
+}
+
+/* フッター */
+#contact>footer {
+  background-color: #b5dbae;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+
+#contact>#footer-logo {
+  margin-bottom: 30px;
+}
+/*================
+PC用のスタイルportfolio
+=================*/
+/* 横幅設定 */
+#portfolio>body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+#portfolio>header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ /* ナビゲーションのレイアウト */
+ #portfolio>nav-pc {
+  text-align: right;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#portfolio>nav-pc > a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+#nav-pc > a:link {
+  color: #c05498;
+}
+#nav-pc > a:visited {
+  color: #f38e13;
+}
+#nav-pc > a:hover {
+  color: #c05498;
+  text-decoration: underline;
+}
+#nav-pc > a:active {
+  color: #f38e13;
+}
+
+/* フッター */
+#portfolio>footer {
+  background-color: #b5dbae;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+
+#portfolio>#footer-logo {
+  margin-bottom: 30px;
+}
+ /* お問い合わせ */
+ #contact {
+  margin: 80px auto 80px auto;
+}
+
+/* 外枠 */
+#contact > form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+ /* 左列の見出し */
+ .contact-heading {
+  width: 240px;
+  align-self: center;
+}
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+
+
+.slider {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+.slider-item {
+  width: 300px;
+  float: left;
+}
+img{
+  width:100%;
+}
+.slider-inner {
+  width: 300%;
+  animation: slider 10s infinite ease;
+}
+
+@keyframes slider {
+  0% {
+  transform: translateX(0);
+  }
+  33% {
+  transform: translateX(-300px);
+  }
+  66% {
+  transform: translateX(-600px);
+  }
+  100% {
+  transform: translateX(0);
+  }
+}
